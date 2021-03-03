@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Contact Me</title>
+</head>
+
+<body>
+    <div id=container>
+        <div id=header>
+            <h1>Contact Me</h1>
+        </div>
+        <div id=navbar>
+            <ul>
+                <li id=navLink><a href="../index.html">Home</a></li>
+                <li id=navLink><a href="about.html">About Me</a></li>
+                <li id=navLink><a href="links.html">Portfolio and CV</a></li>
+                <li id=navLink><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div id=content>
+            <h2>OpenWeather API Weather Check</h2>
+
+            <!DOCTYPE html>
+            <html lang="en">
+
+            <head>
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>AJAX Interactions</title>
+            </head>
+
+            <form>
+                <fieldset>
+                    <legend>Form 1</legend>
+                    <p>
+                    <h2>Enter a Location to See its Weather:</h2>
+                    <fieldset>
+                        <label for="CITY_NAME">City Name</label>
+                        <input type="text" name="city" id="city">
+                    </fieldset>
+                    <fieldset>
+                        <label for="ZIP_CODE">Zip Code</label>
+                        <input type="text" name="zip" id="zip">
+                    </fieldset>
+                    <fieldset>
+                        <label for="COUNTRY_CODE">Country</label>
+                        <input type="text" name="country" id="country">
+                    </fieldset>
+                    </p>
+                    <input type="submit" value="submit" id="weatherReport">
+                    <h2>Weather</h2>
+                    <span id="weatherDisplay"></span>
+                </fieldset>
+            </form>
+            <form>
+                <fieldset>
+                    <legend>Form 2</legend>
+                    <p>
+                    <h2>Enter text for POST request</h2>
+                    <fieldset>
+                        <label for="POST_REQUEST">Post Request Text</label>
+                        <input type="text" name="postRequest" id="postRequest">
+                    </fieldset>
+                    <input type="submit" value="submit" id="POSTtext">
+                    <h2>Result</h2>
+                    <span id="postReturn"></span>
+                </fieldset>
+            </form>
+            <script src="../js/weather.js"></script>
+
+
+            </html>
+        </div>
+        <div id=footer></div>
+    </div>
+</body>
+
+</html>
