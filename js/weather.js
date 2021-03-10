@@ -26,10 +26,10 @@ function getWeather() {
         var payload;
         // adjusts the URL parameters sent to the API if the user inputs a City, else it uses the zipCode variabel in the URL parameters
         if (city) {
-            payload = "//api.openweathermap.org/data/2.5/weather?q=" + city + "," + countryCode + "&appid=" + appid + "&units=imperial";
+            payload = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "," + countryCode + "&appid=" + appid + "&units=imperial";
             console.log(payload)
         } else {
-            payload = "//api.openweathermap.org/data/2.5/weather?zip=" + zipCode + "," + countryCode + "&appid=" + appid + "&units=imperial";
+            payload = "http://api.openweathermap.org/data/2.5/weather?zip=" + zipCode + "," + countryCode + "&appid=" + appid + "&units=imperial";
             console.log(payload)
         }
 
@@ -55,7 +55,7 @@ function returnPOST() {
             "textToSend": null
         };
         payload.textToSend = document.getElementById("postRequest").value;
-        request.open("POST", "//httpbin.org/post", true);
+        request.open("POST", "http://httpbin.org/post", true);
         request.setRequestHeader("Content-Type", "application/json");
         request.addEventListener("load", function () {
             if (request.status >= 200 && request.status < 400) {
